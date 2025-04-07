@@ -4,7 +4,7 @@ Description="Automatically set TDP at different power levels."
 [Service]
 Type=simple
 StandardOutput=journal
-ExecStart=/path/to/power_adjust.sh
+ExecStart=%h/bin/ryzen_power_adjust.sh
 
 [Install]
 WantedBy=default.target
